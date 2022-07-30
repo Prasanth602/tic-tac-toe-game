@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe - Game</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            transform: translate(-50% -50%);
+        }
+        .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            width: 100px;
+            height: 100px;
+            font-size: 3rem;
+            margin: 5px;
+        }
+        #player-turn{
+            font-size: 2rem;
+            padding-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="playing-area">
+            <div id="player-turn"> This is player 1</div>
+            <div id="verdict">Game is still on...</div>
+        <div class="row">
+            <input type="button" value="" class="btn" onclick="playerClicked(0)">
+            <input type="button" value="" class="btn" onclick="playerClicked(1)">
+            <input type="button" value="" class="btn" onclick="playerClicked(2)">
+        </div>
+        <div class="row">
+            <input type="button" value="" class="btn" onclick="playerClicked(3)">
+            <input type="button" value="" class="btn" onclick="playerClicked(4)">
+            <input type="button" value="" class="btn" onclick="playerClicked(5)">
+        </div>
+        <div class="row">
+            <input type="button" value="" class="btn" onclick="playerClicked(6)">
+            <input type="button" value="" class="btn" onclick="playerClicked(7)">
+            <input type="button" value="" class="btn" onclick="playerClicked(8)">
+        </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
